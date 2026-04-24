@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Unbiased AI Decision - Fullstack Local Setup
 
 ## Default admin login
@@ -56,3 +57,6 @@ npm run dev
 - Download Report saves a `.txt` report.
 - Share uses browser share when available, otherwise copies report to clipboard.
 - Pricing is loaded from SQL and editable by admin.
+=======
+# Unbiased-AI-Decision
+>>>>>>> 31b285b7aa07392abb5adcf7e884bec7410f90b0
