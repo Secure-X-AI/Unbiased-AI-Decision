@@ -14,7 +14,7 @@ import Footer from './components/Footer/Footer';
 import AuthModal from './components/Auth/AuthModal';
 import AdminPanel from './components/AdminPanel/AdminPanel';
 import About from './components/About/About';
-import { getStoredUser, clearSession } from './api';
+import { getStoredUser, clearSession } from './api.jsx';
 import './App.css';
 
 function App() {
