@@ -1,0 +1,99 @@
+.use-cases {
+  padding: 6rem 0;
+  background-color: var(--color-background);
+}
+
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.use-case-card {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+}
+
+.use-case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-light);
+}
+
+[data-theme='dark'] .use-case-card:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.use-case-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.icon-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-background-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.use-case-card:hover .icon-wrapper {
+  background-color: var(--color-primary-light);
+  transform: scale(1.1);
+}
+
+[data-theme='dark'] .use-case-card:hover .icon-wrapper {
+  background-color: rgba(99, 102, 241, 0.15);
+}
+
+.use-case-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.use-case-icon.text-indigo { color: #4338CA; }
+.use-case-icon.text-success { color: var(--color-success); }
+.use-case-icon.text-primary { color: var(--color-primary); }
+.use-case-icon.text-warning { color: var(--color-warning); }
+.use-case-icon.text-danger { color: var(--color-danger); }
+.use-case-icon.text-amber { color: #F59E0B; }
+
+.use-case-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.use-case-desc {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.use-case-hover-effect {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all var(--transition-normal);
+}
+
+.use-case-card:hover .use-case-hover-effect {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.use-case-hover-effect .btn-ghost {
+  padding: 0.25rem;
+}
